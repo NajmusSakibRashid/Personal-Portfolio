@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="sidebar-icon" onclick="sidebarClickHandler()">
+      <img src="./media/sidebar-black.png" width="20px">
+    </div>
+    <div class="top-bar">
+      <div class="item text small-text" onclick="aboutMeHandler()">About me</div>
+      <div class="item text small-text">Carrier</div>
+      <div class="item text small-text">
+        Awards and achievements
+        <div class="arrow arrow-down"></div>
+        <div class="list">
+          <div class="sub-item text small-text">
+            <p>
+              Champion in Sudoku Olympiad<br>
+              <small>DRMC National science carnival 2017</small>
+            </p>
+          </div>
+          <div class="sub-item text small-text">
+            <p>
+              Champion in Physics Olympiad<br>
+              <small>DRMC National science carnival 2018</small>
+            </p>
+          </div>
+          <div class="sub-item text small-text">
+            <p>
+              Candidate Master in codeforces
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="item text small-text">Projects</div>
+      <div class="item text small-text">Expertises</div>
+      <!-- <div class="item">
+        Item 1
+        <div class="arrow arrow-down"></div>
+        <div class="list">
+          <dib class="sub-item">
+            Sub item 1
+            <div class="arrow arrow-right"></div>
+            <div class="list">
+              <div class="sub-item">Sub sub item 1</div>
+              <div class="sub-item">Sub sub item 2</div>
+            </div>
+          </dib>
+          <dib class="sub-item">
+            Sub ---------- item 2
+            <div class="arrow arrow-right"></div>
+            <div class="list">
+              <div class="sub-item">
+                Sub sub item 1
+                <div class="arrow arrow-right"></div>
+                <div class="list">
+                  <div class="sub-item">Sub sub item 1</div>
+                  <div class="sub-item">Sub sub item 2</div>
+                </div>
+              </div>
+              <div class="sub-item">
+                Sub sub item 2
+                <div class="arrow arrow-right"></div>
+                <div class="list">
+                  <div class="sub-item">Sub sub item 1</div>
+                  <div class="sub-item">Sub sub item 2</div>
+                </div>
+              </div>
+              <div class="sub-item">Sub sub item 3</div>
+            </div>
+          </dib>
+          <dib class="sub-item">Sub item 3</dib>
+        </div>
+      </div> -->
+    </div>
+    <div class="logo" onclick="logoClickHandler()"><img src="./media/logo.png" style="height: 30px;"></div>
+  </div>
+  <div class="slide-bar"></div>
+  <div class="slide-container">
+    <div class="slide" style="background-image: url('./media/skill.png');">
+      <!-- <img src="./media/solved500.png"> -->
+      <div class="percentage-container">
+        <div class="text">
+          <center>Skills</center>
+        </div>
+
+        <div class="text label">Coding</div>
+        <div class="percentage-bar">
+          <div class="progress" style="flex:98"></div>
+          <div class="rest" style="flex:2"></div>
+        </div>
+
+
+        <div class="text label">Designing</div>
+        <div class="percentage-bar">
+          <div class="progress" style="flex:82"></div>
+          <div class="rest" style="flex:18"></div>
+        </div>
+
+
+        <div class="text label">Testing</div>
+        <div class="percentage-bar">
+          <div class="progress" style="flex:64"></div>
+          <div class="rest" style="flex:36"></div>
+        </div>
+
+
+        <div class="text label">Object Oriented Programming</div>
+        <div class="percentage-bar">
+          <div class="progress" style="flex:91"></div>
+          <div class="rest" style="flex:9"></div>
+        </div>
+
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('./media/code-forces.png');">
+      <img src="./media/solved500.png">
+    </div>
+    <div class="slide" style="background-image: url('./media/uva.png');">
+      <img src="./media/cm.png">
+    </div>
+    <div class="slide" style="background-image: url('./media//buet-bg.png');">
+      <img src="./media/buet.png">
+    </div>
+    <div class="slide" style="background-image: url('./media/lightoj.png');">
+      <div class="tools">
+        <div class="text">Tools familiar with</div>
+        <div class="image-container">
+          <img src="./media/react.png" alt="">
+          <img src="./media/nextjs.png" alt="">
+          <img src="./media/node.png" alt="">
+          <img src="./media/express-js.png" alt="">
+          <img src="./media/html.png" alt="">
+          <img src="./media/css.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('./media/timus.png');">
+      <div class="tools">
+        <div class="text">Experienced in</div>
+        <div class="image-container">
+          <img src="./media/c++.png" alt="">
+          <img src="./media/java.png" alt="">
+          <img src="./media/python.png" alt="">
+          <img src="./media/js.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="angle left-button" onclick="leftHandler()"><img src="./media/left-angle.png" width="20px"></div>
+    <div class="dots"></div>
+    <div class="angle right-button" onclick="rightHandler()"><img src="./media/right-angle.png" width="20px"></div>
+  </div>
+  <div class="about-me-container">
+    <div class="about-me text">
+      <h3>About Najmus Sakib Rashid:</h3>
+
+      <p>
+        Najmus Sakib Rashid, hailing from Dinajpur, Bangladesh, is a passionate problem solver and a seasoned professional
+        in the field of Computer Science and Engineering (CSE). His journey began at the prestigious Bangladesh University
+        of Engineering and Technology (BUET), where his childhood knack for simplifying complex challenges led him to
+        specialize in web development, software design, and database management. His expertise lies in languages like C++,
+        Java, Python, and JavaScript, along with a strong grasp of Object-Oriented Programming (OOP) and Data Structures
+        and Algorithms (DSA).
+      </p>
+      <p>
+        Beyond his technical prowess, Najmus finds solace in the pages of newspapers, staying well-informed about current
+        affairs, and enjoys the occasional adventure in tourism, balanced with engaging conversations with friends.
+      </p>
+      <p>
+        Najmus has garnered notable accolades such as securing the first prize in the Sudoku Olympiad and the Physics
+        Olympiad at the DRMC Science Fest in 2017 and 2018, respectively. With a commendable performance on Codeforces and
+        solving over 500 programming problems across various platforms, he demonstrates a resilient spirit and a
+        persistent drive for excellence.
+      </p>
+      <p>
+        Driven by a vision to cultivate leadership and professionalism, Najmus strives to weave together optimization and
+        discipline in both his professional and personal endeavors. His journey has been marked by overcoming substantial
+        challenges, fostering resilience, and fortifying his emotional intelligence, enabling him to navigate through
+        academic and personal crises with grace and resilience.
+      </p>
+      <p>
+        Looking ahead, Najmus envisions himself making a substantial impact on society, catalyzing positive change, and
+        leaving an indelible mark in the world.
+      </p>
+    </div>
+    <div class="about-me-image"></div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>

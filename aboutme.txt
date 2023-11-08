@@ -1,0 +1,17 @@
+<h1>About Najmus Sakib Rashid:</h1>
+
+<p>
+  Najmus Sakib Rashid, hailing from Dinajpur, Bangladesh, is a passionate problem solver and a seasoned professional in the field of Computer Science and Engineering (CSE). His journey began at the prestigious Bangladesh University of Engineering and Technology (BUET), where his childhood knack for simplifying complex challenges led him to specialize in web development, software design, and database management. His expertise lies in languages like C++, Java, Python, and JavaScript, along with a strong grasp of Object-Oriented Programming (OOP) and Data Structures and Algorithms (DSA).
+</p>
+<p>
+  Beyond his technical prowess, Najmus finds solace in the pages of newspapers, staying well-informed about current affairs, and enjoys the occasional adventure in tourism, balanced with engaging conversations with friends.
+</p>
+<p>
+  Najmus has garnered notable accolades such as securing the first prize in the Sudoku Olympiad and the Physics Olympiad at the DRMC Science Fest in 2017 and 2018, respectively. With a commendable performance on Codeforces and solving over 500 programming problems across various platforms, he demonstrates a resilient spirit and a persistent drive for excellence.
+</p>
+<p>
+  Driven by a vision to cultivate leadership and professionalism, Najmus strives to weave together optimization and discipline in both his professional and personal endeavors. His journey has been marked by overcoming substantial challenges, fostering resilience, and fortifying his emotional intelligence, enabling him to navigate through academic and personal crises with grace and resilience.
+</p>
+<p>
+  Looking ahead, Najmus envisions himself making a substantial impact on society, catalyzing positive change, and leaving an indelible mark in the world.
+</p>
