@@ -63,15 +63,15 @@ const rightHandler=()=>{
   index=right;
 }
 
-const autoSlide=setInterval(rightHandler,5000);
-const clearAutoSlide=setTimeout(()=>{
-  clearInterval(autoSlide);
-},25000);
+// const autoSlide=setInterval(rightHandler,5000);
+// const clearAutoSlide=setTimeout(()=>{
+//   clearInterval(autoSlide);
+// },25000);
 
-addEventListener('click',(e)=>{
-  clearInterval(autoSlide);
-  clearTimeout(clearAutoSlide);
-})
+// addEventListener('click',(e)=>{
+//   clearInterval(autoSlide);
+//   clearTimeout(clearAutoSlide);
+// })
 
 const logoClickHandler=()=>{
   document.querySelector('.dot').click();
