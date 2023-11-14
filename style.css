@@ -315,6 +315,38 @@ body{
   display:block;
 }
 
+.profile-link{
+  position: fixed;
+  right:0px;
+  bottom:0px;
+  margin:50px;
+  z-index: 500;
+}
+
+.front{
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  padding:20px;
+  padding-bottom:16px;
+  background-color: #c3b9e2;
+  border-radius: 25%;
+  transition: .5s ease;
+}
+
+.front:nth-child(1){
+  box-shadow: 2px 2px 2px #999;
+}
+
+.link{
+  background-color:#f9e7e7;
+  border-radius: 50%;
+}
+
+#init{
+  z-index: 1000;
+}
+
 @media screen and (min-width:650px) {
   .sidebar-icon{
     display:none;

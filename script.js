@@ -156,3 +156,41 @@ document.querySelector('body').addEventListener('click',(e)=>{
   }
 })
 
+const initButton=document.querySelector('#init');
+const fronts=document.querySelectorAll('.front');
+
+let expanded=false;
+
+initButton.addEventListener('click',(e)=>{
+  if(!expanded){
+    initButton.style.transform='rotate(45deg)';
+    for(let i=0;i<fronts.length;i++){
+      fronts[i].style.bottom=`${100*i}px`;
+      fronts[i].style.boxShadow='2px 2px 2px #999';
+    }
+  }
+  else{
+    initButton.style.transform='rotate(0deg)';
+    for(let i=0;i<fronts.length;i++){
+      fronts[i].style.bottom='0px';
+      if(i)
+        fronts[i].style.boxShadow='none';
+    }
+  }
+  expanded^=true;
+})
+
+
+const ojs=[
+  '',
+  'https://codeforces.com/submissions/Najmus_Sakib_Rashid',
+  'https://vjudge.net/status#un=NajmuSakibRashid',
+  'https://lightoj.com/user/sakib-buetian'
+]
+
+for(let i=1;i<fronts.length;i++){
+  fronts[i].addEventListener('click',(e)=>{
+    open(ojs[i]);
+  })
+}
+
