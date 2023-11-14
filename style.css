@@ -157,6 +157,11 @@
   background-size: cover;
 }
 
+.slide img{
+  width:100%;
+  max-width: 350px;
+}
+
 .slide:nth-child(1){
   opacity:1;
 }
@@ -268,10 +273,46 @@
   font-size:medium;
 }
 
+.awards{
+  position: relative;
+  display:none;
+}
+
+.awards div{
+  padding:20px;
+}
+
+.background{
+  background-color: #58795e;
+  position:absolute;
+  left:-50%;
+  right:-7px;
+  top:0px;
+  bottom:0px;
+  z-index: -100;
+}
+
+.content-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-header{
+  padding:20px;
+  margin:20px;
+  background-color: #2c3c2f;
+}
+
 body{
   font-family:sans-serif;
   margin-top: 50px;
   background-color: #bafdc5;
+  padding:0px;
+}
+
+.short-screen-awards{
+  display:block;
 }
 
 @media screen and (min-width:650px) {
@@ -292,5 +333,14 @@ body{
   }
   .about-me-image{
     padding:0px;
+  }
+  .awards{
+    grid-template-columns: 1fr 1fr;
+  }
+  .big-screen-awards{
+    display:grid;
+  }
+  .short-screen-awards{
+    display:none;
   }
 }
