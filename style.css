@@ -347,6 +347,33 @@ body{
   z-index: 1000;
 }
 
+.project-container{
+  overflow-x:scroll;
+  display: flex;
+}
+
+.project{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  margin:30px;
+}
+
+.learn-more{
+  background-color: #58795e;
+  width: 50%;
+  align-self: center;
+  text-align: center;
+  padding:10px;
+  margin:10px;
+  border-radius: 20px;
+}
+
+.project img{
+  width:75vw;
+  object-fit: cover;
+}
+
 @media screen and (min-width:650px) {
   .sidebar-icon{
     display:none;
@@ -375,4 +402,9 @@ body{
   .short-screen-awards{
     display:none;
   }
+}
+
+.description{
+  color: #58795e;
+  text-align: left;
 }

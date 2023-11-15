@@ -194,3 +194,15 @@ for(let i=1;i<fronts.length;i++){
   })
 }
 
+const learnMores=document.querySelectorAll('.learn-more');
+
+const projects=[
+  'https://github.com/NajmusSakibRashid/School-Management-System'
+]
+
+for(let i=0;i<learnMores.length;i++){
+  learnMores[i].addEventListener('click',(e)=>{
+    window.open(projects[0]);
+  })
+}
+
