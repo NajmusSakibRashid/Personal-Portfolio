@@ -135,7 +135,7 @@ const target = document.querySelectorAll('.target');
 // console.log(shortCuts);
 // console.log(target);
 
-const arr = [0, 10, 11, 14, 15, 18, -1, -1, -1, 0, 1, 2, 4, 6, 8];
+const arr = [0, 10, 11, 14, 15, 18, 19,-1,-1, 0, 1, 2, 4, 6, 8,19];
 
 for (let i = 0; i < arr.length; i++) {
   if (arr[i] != -1)
@@ -144,9 +144,33 @@ for (let i = 0; i < arr.length; i++) {
         e.target.setAttribute('executed',true);
         scroll({
           top: scrollY + target[arr[i]].getBoundingClientRect().top - 25,
+          // left: scrollX + target[arr[i]].getBoundingClientRect().left-25,
           behavior: "smooth"
         })
       }
+    })
+}
+
+const projectShortCut=document.querySelectorAll('.project-short-cut');
+const projectTarget=document.querySelectorAll('.project-target');
+const projectContainer=document.querySelector('.project-container');
+
+console.log(projectShortCut);
+console.log(projectTarget);
+
+const projectArr=[0,1,0,1];
+
+for (let i = 0; i < projectArr.length; i++) {
+  if (projectArr[i] != -1)
+    projectShortCut[i].addEventListener('click', (e) => {
+      // if (!e.target.hasAttribute('executed')) {
+      //   e.target.setAttribute('executed',true);
+        projectContainer.scroll({
+          // top: scrollY + target[arr[i]].getBoundingClientRect().top - 25,
+          left: projectContainer.scrollLeft + projectTarget[projectArr[i]].getBoundingClientRect().left-25,
+          behavior: "smooth"
+        })
+      // }
     })
 }
 
@@ -197,12 +221,13 @@ for(let i=1;i<fronts.length;i++){
 const learnMores=document.querySelectorAll('.learn-more');
 
 const projects=[
-  'https://github.com/NajmusSakibRashid/School-Management-System'
+  'https://github.com/NajmusSakibRashid/School-Management-System',
+  './resources/Report.pdf'
 ]
 
 for(let i=0;i<learnMores.length;i++){
   learnMores[i].addEventListener('click',(e)=>{
-    window.open(projects[0]);
+    window.open(projects[i]);
   })
 }
 

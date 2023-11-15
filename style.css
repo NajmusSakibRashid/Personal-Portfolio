@@ -31,6 +31,7 @@
   position:relative;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   text-transform: uppercase;
   color:#94ca9d;
   margin-right: 10%;
@@ -357,12 +358,12 @@ body{
   display: flex;
   flex-direction: column;
   margin:30px;
+  align-items: center;
 }
 
 .learn-more{
   background-color: #58795e;
-  width: 50%;
-  align-self: center;
+  width: 200px;
   text-align: center;
   padding:10px;
   margin:10px;
@@ -371,6 +372,7 @@ body{
 
 .project img{
   width:75vw;
+  height: 75vh;
   object-fit: cover;
 }
 
@@ -402,9 +404,16 @@ body{
   .short-screen-awards{
     display:none;
   }
+  .description{
+    width:75%;
+  }
 }
 
 .description{
   color: #58795e;
   text-align: left;
+}
+
+img{
+  background-color: black;
 }
