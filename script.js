@@ -82,6 +82,15 @@ const logoClickHandler = () => {
   });
 }
 
+const educationClickHandler=()=>{
+  document.querySelectorAll('.dot')[3].click();
+  scroll({
+    top:0,
+    left:0,
+    behavior:"smooth"
+  })
+}
+
 document.querySelector('.slide-container').style.height = `${window.innerHeight - 100}px`;
 document.querySelector('body').style.marginTop = `${window.innerHeight}px`;
 
@@ -132,10 +141,10 @@ for (let i = 0; i < big_screen_awards.children.length; i += dir[i % 4]) {
 
 const shortCuts = document.querySelectorAll('.short-cut');
 const target = document.querySelectorAll('.target');
-// console.log(shortCuts);
-// console.log(target);
+console.log(shortCuts);
+console.log(target);
 
-const arr = [0, 10, 11, 14, 15, 18, 19,-1,-1, 0, 1, 2, 4, 6, 8,19];
+const arr = [0, 1, 10, 13, 14, 17, 18,-1,-1, 0, 1, 2, 4, 6, 8,18];
 
 for (let i = 0; i < arr.length; i++) {
   if (arr[i] != -1)
@@ -143,7 +152,7 @@ for (let i = 0; i < arr.length; i++) {
       if (!e.target.hasAttribute('executed')) {
         e.target.setAttribute('executed',true);
         scroll({
-          top: scrollY + target[arr[i]].getBoundingClientRect().top - 25,
+          top: scrollY + target[arr[i]].getBoundingClientRect().top - 50,
           // left: scrollX + target[arr[i]].getBoundingClientRect().left-25,
           behavior: "smooth"
         })
@@ -155,8 +164,8 @@ const projectShortCut=document.querySelectorAll('.project-short-cut');
 const projectTarget=document.querySelectorAll('.project-target');
 const projectContainer=document.querySelector('.project-container');
 
-console.log(projectShortCut);
-console.log(projectTarget);
+// console.log(projectShortCut);
+// console.log(projectTarget);
 
 const projectArr=[0,1,0,1];
 

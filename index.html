@@ -70,53 +70,14 @@
           </div>
         </div>
       </div>
-      <div class="item text small-text short-cut">Education</div>
+      <div class="item text small-text short-cut" onclick="educationClickHandler()">Education</div>
       <div class="item text small-text short-cut">Carrier</div>
-      <!-- <div class="item">
-        Item 1
-        <div class="arrow arrow-down"></div>
-        <div class="list">
-          <dib class="sub-item">
-            Sub item 1
-            <div class="arrow arrow-right"></div>
-            <div class="list">
-              <div class="sub-item">Sub sub item 1</div>
-              <div class="sub-item">Sub sub item 2</div>
-            </div>
-          </dib>
-          <dib class="sub-item">
-            Sub ---------- item 2
-            <div class="arrow arrow-right"></div>
-            <div class="list">
-              <div class="sub-item">
-                Sub sub item 1
-                <div class="arrow arrow-right"></div>
-                <div class="list">
-                  <div class="sub-item">Sub sub item 1</div>
-                  <div class="sub-item">Sub sub item 2</div>
-                </div>
-              </div>
-              <div class="sub-item">
-                Sub sub item 2
-                <div class="arrow arrow-right"></div>
-                <div class="list">
-                  <div class="sub-item">Sub sub item 1</div>
-                  <div class="sub-item">Sub sub item 2</div>
-                </div>
-              </div>
-              <div class="sub-item">Sub sub item 3</div>
-            </div>
-          </dib>
-          <dib class="sub-item">Sub item 3</dib>
-        </div>
-      </div> -->
     </div>
     <div class="logo" onclick="logoClickHandler()"><img src="./media/logo.png" style="height: 30px;"></div>
   </div>
   <div class="slide-bar"></div>
   <div class="slide-container">
     <div class="slide loading" style="background-image: url('./media/skill.png');">
-      <!-- <img src="./media/solved500.png"> -->
       <div class="percentage-container">
         <div class="text">
           <center>Skills</center>
@@ -157,9 +118,37 @@
     <div class="slide loading" style="background-image: url('./media/uva.png');">
       <img src="./media/cm.png">
     </div>
-    <!-- <div class="slide" style="background-image: url('./media//buet-bg.png');">
-      <img src="./media/buet.png">
-    </div> -->
+    <div class="slide" style="background-image: url('./media//buet-bg.png');">
+      <div class="education text small-text">
+        <div class="ed-title">Education</div>
+        <div class="vline">
+          <div class="circle"></div>
+        </div>
+        <div class="info">
+          <small>2016</small><br>
+          <strong>Dhaka Residential Model College</strong> <br>
+          Secondary School Certificate <br>
+          GPA: 5.00 <br>
+        </div>
+        <div class="vline">
+          <div class="circle"></div>
+        </div>
+        <div class="info">
+          <small>2018</small><br>
+          <strong>Dhaka Residential Model College</strong> <br>
+          Higher Secondary Certificate<br>
+          GPA: 5.00 <br>
+        </div>
+        <div class="vline">
+          <div class="circle"></div>
+        </div>
+        <div class="info">
+          <small>2019 - Now</small><br>
+          <strong>Bangladesh University of Engineering and Technology</strong> <br>
+          BSC in Computer Science [Final Year]<br>
+        </div>
+      </div>
+    </div>
     <div class="slide loading" style="background-image: url('./media/lightoj.png');">
       <div class="tools">
         <div class="text">
@@ -192,7 +181,8 @@
     <div class="dots"></div>
     <div class="angle right-button" onclick="rightHandler()"><img src="./media/right-angle.png" width="20px"></div>
   </div>
-  <div class="about-me-container target">
+  <div class="title text target">About Me</div>
+  <div class="about-me-container">
     <div class="about-me text">
       <h3>About Najmus Sakib Rashid:</h3>
 
@@ -234,8 +224,12 @@
     </div>
     <div class="about-me-image"></div>
   </div>
-  <div class="awards container short-screen-awards target"></div>
-  <div class="awards container big-screen-awards target">
+  <div class="title text target">
+    <div class="background"></div>
+    Awards and achievements
+  </div>
+  <div class="awards container short-screen-awards"></div>
+  <div class="awards container big-screen-awards">
     <div class="background"></div>
     <div class="award-container content-text target"><img class="certificate" src="./media/sudoku.png" alt="" style="width: 100%;"></div>
     <div class="text small-text content-text target">
@@ -287,7 +281,8 @@
     <div class="award-container content-text target"><img src="./media/Codeforces_logo.png" alt="" style="width: 100%;">
     </div>
   </div>
-  <div class="project-container target">
+  <div class="title text target">Projects</div>
+  <div class="project-container">
     <div class="project project-target">
       <img class="certificate" src="./media/db-project.png" alt="">
       <div class="description text small-text">
