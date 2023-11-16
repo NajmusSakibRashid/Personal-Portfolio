@@ -141,8 +141,8 @@ for (let i = 0; i < big_screen_awards.children.length; i += dir[i % 4]) {
 
 const shortCuts = document.querySelectorAll('.short-cut');
 const target = document.querySelectorAll('.target');
-console.log(shortCuts);
-console.log(target);
+// console.log(shortCuts);
+// console.log(target);
 
 const arr = [0, 1, 10, 13, 14, 17, 18,-1, 0, 1, 2, 4, 6, 8,18];
 
