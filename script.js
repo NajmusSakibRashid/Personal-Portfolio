@@ -144,7 +144,7 @@ const target = document.querySelectorAll('.target');
 console.log(shortCuts);
 console.log(target);
 
-const arr = [0, 1, 10, 13, 14, 17, 18,-1,-1, 0, 1, 2, 4, 6, 8,18];
+const arr = [0, 1, 10, 13, 14, 17, 18,-1, 0, 1, 2, 4, 6, 8,18];
 
 for (let i = 0; i < arr.length; i++) {
   if (arr[i] != -1)
